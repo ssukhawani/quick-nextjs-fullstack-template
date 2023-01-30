@@ -15,6 +15,11 @@
     "prettier": "prettier --write .",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,html,css,scss,json}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "next": "13.1.6",
     "react": "18.2.0",
@@ -25,6 +30,7 @@
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "husky": "8.0.3",
+    "lint-staged": "13.1.0",
     "prettier": "2.8.3"
   }
 }
